@@ -1,0 +1,16 @@
+void cmd_pwd(int socket);
+void cmd_cwd(int socket, char * destination);
+void read_ip_port(void);
+void create_sock_data_con_act(void);
+void data_con_act(void);
+void create_sock_data_con_pasv(void);
+void data_con_pasv(void);
+void cmd_list(int socket_input);
+const char* statbuf_get_date(struct stat *sbuf);
+const char* statbuf_get_perms(struct stat *sbuf);
+void cmd_mkd(int socket_input,char * dir_name);
+void cmd_dele(int socket_input, char * file_name);
+void cmd_rnfr(int socket_input, char * file_name);
+void cmd_rnto(int socket_input,char * file_name_original, char * file_name_present);
+void cmd_retr(int socket_input, int limit_speed);
+void cmd_stor(int socket_input, int limit_speed);
